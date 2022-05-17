@@ -1,11 +1,15 @@
 const express = require("express"); //importamos dependencia
 let app = express(); //declaramos una App de Express
+
+//PRÁCTICA NUEVA, MONGODB
 const mongoose = require("mongoose"); //Conexión a base de datos
 
+//crear constantes para usuario, contraseña y uri
 const user = "carlarodriguez";
 const password = "qwer1234";
 const uri = `mongodb+srv://${user}:${password}@cluster0.znzzu.mongodb.net/?retryWrites=true&w=majority`;
 
+//conectar base de datos mediante mongoose
 mongoose
   .connect(uri, {
     useNewUrlParser: true,
@@ -13,6 +17,8 @@ mongoose
   })
   .then(() => console.log("Base de datos conectada"))
   .catch((error) => console.log(error));
+
+// FIN DE LA PRÁCTICA MONGODB
 
 let port = process.env.port || 3000; //definición del puerto que escucha
 
