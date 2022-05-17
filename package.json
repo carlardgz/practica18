@@ -1,0 +1,27 @@
+{
+  "name": "p15",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlardgz/practica15.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlardgz/practica15/issues"
+  },
+  "homepage": "https://github.com/carlardgz/practica15#readme",
+  "description": ""
+}
